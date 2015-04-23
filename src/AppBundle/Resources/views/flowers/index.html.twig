@@ -16,7 +16,10 @@
         {% for entity in entities %}
             <tr>
                 <td><a href="{{ path('admin_flowers_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
-                <td>{{ entity.name }}</td>
+                <td>
+                <a href="{{ path('admin_flowers_show', { 'id': entity.id }) }}">
+                    {{ entity.name }}
+                </a>
                 <td>{{ entity.age }}</td>
                 <td>
                 <ul>
